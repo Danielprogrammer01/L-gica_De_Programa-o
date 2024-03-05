@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int salariomensal = 0;
+    int diastralhados = 0;
+    int horasdiarias = 0;
+    int horasmensais = 0;
+    int salariohora = 0;
+
+    printf("Qual é o seu salário mensal?\n");
+    scanf("%f", &salariomensal);
+
+    printf("Qual é a sua carga horária de trabalho diário?\n");
+    scanf("%d", &horasdiarias);
+
+    printf("Quantos dias trabalhados por semana?\n");
+    scanf("%d", &diastralhados);
+
+    horasmensais = horasdiarias * diastralhados;
+    salariohora = salariomensal / horasmensais;
+
+    printf("Salário por hora trabalhada: %.2f", salariohora);
+}
